@@ -28,3 +28,44 @@ project-root/
     └── metrics/
 ```  
 
+## Usage
+
+1. Setup the Project:
+
+   Clone the repository.  
+   Ensure you have Python installed.  
+   Install required dependencies using the requirements.txt file.
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+2. Ingest the raw data:
+   ```bash
+   python scripts/01_data_ingestion.py
+   ```
+
+3. Preprocess the data:
+   ```bash
+   python scripts/02_data_preprocessing.py
+   ```
+
+4. Run exploratory data analysis:
+   ```bash
+   python scripts/03_exploratory_analysis.py
+   ```
+
+5. Generate features:
+   ```bash
+   python scripts/04_feature_engineering.py
+   ```
+
+6. Train the model:
+   ```bash
+   python scripts/05_model_training.py
+   ```
+
+7. Evaluate the model:
+   ```bash
+   python scripts/06_model_evaluation.py
+   ```
+
