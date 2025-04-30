@@ -1,5 +1,13 @@
-# Load pandas
-# Define ingest(input_csv_path, output_parquet_path)
-#   read CSV with parse_dates on "Date"
-#   write to Parquet (no index)
-# if __name__ == "__main__": call ingest with paths
+import pandas as pd
+import os
+
+def ingest(input_csv_path, output_parquet_path):
+    df = pd.read_csv(input_csv_path, parse_dates=["Date"])
+    os.makedirs(os.path.dirname(output_parquet_path), exist_ok=True)
+    df.to_parquet(output_parquet_path, index=False)
+
+if __name__ == "__main__":
+    ingest(
+        "data/raw/melb_data.csv",
+        "data/processed/melb_raw.parquet"
+    )
