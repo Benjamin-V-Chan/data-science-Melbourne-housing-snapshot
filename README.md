@@ -69,3 +69,20 @@ project-root/
    python scripts/06_model_evaluation.py
    ```
 
+## Requirements
+
+- Python 3.7+  
+- pandas  
+- numpy  
+- scikit-learn  
+- matplotlib  
+- seaborn  
+- pyarrow (for Parquet support)  
+- joblib
+
+## Acknowledgments
+
+- **dataset name**: Melbourne Housing Snapshot  
+- **dataset author**: DanB  
+- **dataset source**: https://www.kaggle.com/datasets/dansbecker/melbourne-housing-snapshot
+
